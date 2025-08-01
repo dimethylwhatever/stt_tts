@@ -25,10 +25,10 @@ async def text_to_speech(text):
     loop = asyncio.get_event_loop()
     mp3_file = await loop.run_in_executor(None, sync_tts)
     print(f"Speech saved to {mp3_file}")
-    await play_through_VB(mp3_file)
+    await play_through_VC(mp3_file)
     return mp3_file
 
-async def play_through_VB(mp3_file):
+async def play_through_VC(mp3_file):
     try:
         mixer.music.load(mp3_file)
         mixer.music.play()
