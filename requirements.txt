@@ -1,4 +1,3 @@
 RealtimeSTT
-pyttsx3
-asyncio
 pygame
+gtts
